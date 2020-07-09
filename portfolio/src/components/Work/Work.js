@@ -8,7 +8,7 @@ import CodingQuiz from "../../img/porjects/coding.png";
 import Weather from "../../img/porjects/weather.png";
 import Employee from "../../img/porjects/employee.png";
 import ReactEmpo from "../../img/porjects/ReactEmpo.png";
-
+import Typical from 'react-typical';
 
 
 const Work = () => {
@@ -18,7 +18,21 @@ const Work = () => {
       My <span className="secondary-color">Work</span>
     </h1>
     <h2 className="sm-heading">
-      Check out some of my projects...
+    
+      Check out {' '}
+      <Typical
+        steps={[
+          'some of my projects...', 2000, 
+          'Beast Mode', 2000,
+          'Coding Quiz', 2000,
+          'Weather Dashboard', 2000,
+          'Employee Tracker', 2000,
+          'Employee Directory', 2000
+          
+        ]}
+        loop={Infinity}
+        wrapper="span"
+      />
     </h2>
     <div className="projects">
       <div className="item">
